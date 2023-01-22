@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Марина Бочарова](https://up.htmlacademy.ru/htmlcss/36/user/2216513).
-* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/i1217273).
+* Наставник: [Никитина](https://htmlacademy.ru/profile/i1217273).
 
 ---
 
