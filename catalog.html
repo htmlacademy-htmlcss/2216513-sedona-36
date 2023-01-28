@@ -32,21 +32,22 @@
           <ul class="navigation-list navigation-user">
               <li class="navigation-item">
                   <a class="navigation-link"  href="#">
-                    <span class="visually-hidded">
+                    <span class="visually-hidden">
                       Поиск
                     </span>
                   </a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link"  href="#">
-                    <span class="visually-hidded">
+                    <span class="visually-hidden">
                     ИЗБРАННОЕ
                     </span>
                 </a>
+                <!--- вывод числа гостинец в ИЗБРАННОМ   12   -->
             </li>
             <li class="navigation-item">
                 <a class="navigation-link"  href="#">
-                    ХОЧУ СЮДА!
+                    <button class="button header-button" type="button"> ХОЧУ СЮДА!</button>
                 </a>
             </li>
         </ul>
@@ -59,16 +60,17 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="index.html">Главная</a>
+                  <a class="breadcrumbs-link" href="index.html">
+                     <span class="visually-hidden">Главная</span></a>
                 </li>
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" >Гостиницы</a>
                 </li>
             </ul>
         </header>
-         <!--   фильтр выбора гостинец                                    -->
-        <section class="catalog-products">
-            <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+
+        <section class="catalog-filter">
+            <h2  class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form  class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Инфраструктура :</legend>
@@ -114,27 +116,29 @@
 
                 <!--  Стоимость, Р:  0 от  9000 до   с ползунком -->
 
-                <button class="button" type="submit">ПРИМЕНИТЬ</button>
-                <button class="button" type="reset" >СБРОСИТЬ </button>
+                <button class="button catalog-button" type="submit">ПРИМЕНИТЬ</button>
+                <button class="button catalog-button" type="reset" >СБРОСИТЬ </button>
             </form>
         </section>
 
-        <section class="catalog-filter-group">
+        <section class="catalog-select-group">
+            <h2 class="catalog-select-title">НАЙДЕНО ГОСТИНИЦ:</h2>
+            <!--                         вывод числа гостинец  38     -->
 
-            <!-- фильтр показа карточек гостиниц   -->
-            <select class="select -control" aria-label="Сортировка">
+               <!-- фильтр сортировки карточек гостиниц   -->
+            <select class="select-control" aria-label="Сортировка">
                 <option value="cheap"   > Сначала дешёвое></option>
                 <option value="popular" > Сначала популярное></option>
-                <option value="expensive"> Сначала дорогое></option>
+                <option value="expensive">Сначала дорогое></option>
             </select>
 
-            <a href="#" class="button button-light">
+            <a href="#" class="button button-select-light">
                 <span class="visually-hidden">Показать карточки</span>
             </a>
-            <a class="button" href="#">
+            <a class="button button-select" href="#">
                 <span class="visually-hidden">Показать карточку</span>
             </a>
-            <a class="button" href="#">
+            <a class="button button-select" href="#">
                 <span class="visually-hidden">Показать списки</span>
             </a>
 
@@ -145,65 +149,55 @@
                     <img class="product-card-image" src="#" alt="">
                     <h3 class="product-card-title">Amara Resort & Spa</h3>
                 </a>
-                <h4 class="product-card-subtitle">Гостиница ****</h4>
+                <b class="product-card-subtitle">Гостиница</b>
                 <b class="product-card-price">от 4000р </b>
-                <b class="product-card-reyting">8,5</b>
-                <a class="product-card-button button" href="#" >В ИЗБРАННОЕ</a>
+                <button class="product-card-button button-1">ПОДРОБНЕЕ  </button>
+                <button class="product-card-button button-2">В ИЗБРАННОЕ</button>
+                <b class="product-card-stars">****</b>
+                <b class="product-card-raiting">8,5</b>
+                <!--<a class="product-card-button button" href="#" >В ИЗБРАННОЕ</a>  -->
               </li>
                <li class="product-card">
                 <a class="product-card-link" href="product.html">
                     <img class="product-card-image" src="#" alt="">
                     <h3 class="product-card-title">Villas at Poco Diablo</h3>
                 </a>
-                <h4 class="product-card-subtitle">Гостиница ****</h4>
+                <b class="product-card-subtitle">Гостиница</b>
                 <b class="product-card-price">от 5000р</b>
-                <b class="product-card-reyting">9.2</b>
-                <a class="product-card-button button" href="#" >В ИЗБРАННОМ</a>
+                <button class="product-card-button button-1">ПОДРОБНЕЕ  </button>
+                <button class="product-card-button button-3">В ИЗБРАННОМ</button>
+                <b class="product-card-stars">****</b>
+                <b class="product-card-raiting">9,2</b>
+                <!--<a class="product-card-button button" href="#" >В ИЗБРАННОМ</a> -->
               </li>
                <li class="product-card">
                 <a class="product-card-link" href="product.html">
                     <img class="product-card-image" src="#" alt="">
                     <h3 class="product-card-title">Desert Quail Inn</h3>
                 </a>
-                <h4 class="product-card-subtitle">Гостиница  ***</h4>
+                <b class="product-card-subtitle">Гостиница</b>
                 <b class="product-card-price">от 2500р</b>
-                <b class="product-card-reyting">6,4</b>
-                <a class="product-card-button button" href="#" >В ИЗБРАННОЕ</a>
+                <button class="product-card-button button-1">ПОДРОБНЕЕ  </button>
+                <button class="product-card-button button-2">В ИЗБРАННОЕ</button>
+                <b class="product-card-stars">***</b>
+                <b class="product-card-raiting">6,9</b>
               </li>
                <li class="product-card">
                 <a class="product-card-link" href="product.html">
                     <img class="product-card-image" src="#" alt="">
-                    <h3 class="product-card-title">Green Tree Inn</h3>
+                    <h3 class="product-card-title">GreenTree Inn</h3>
                 </a>
-                <h4 class="product-card-subtitle">Гостиница ****</h4>
+                <h4 class="product-card-subtitle">Гостиница</h4>
                 <b class="product-card-price">от 1500р</b>
-                <b class="product-card-reyting">5.0</b>
-                <a class="product-card-button button" href="#" >В ИЗБРАННОЕ</a>
-              </li>
-               <li class="product-card">
-                <a class="product-card-link" href="product.html">
-                    <img class="product-card-image" src="#" alt="">
-                    <h3 class="product-card-title"></h3>
-                </a>
-                <h4 class="product-card-subtitle"></h4>
-                <b class="product-card-price"> </b>
-                <b class="product-card-reyting"></b>
-                <a class="product-card-button button" href="#" >В ИЗБРАННОЕ</a>
-              </li>
-               <li class="product-card">
-                <a class="product-card-link" href="product.html">
-                    <img class="product-card-image" src="#" alt="">
-                    <h3 class="product-card-title"></h3>
-                </a>
-                <h4 class="product-card-subtitle"></h4>
-                <b class="product-card-price"> </b>
-                <b class="product-card-reyting"></b>
-                <a class="product-card-button button" href="#" >В ИЗБРАННОЕ</a>
+                <button class="product-card-button button-1">ПОДРОБНЕЕ  </button>
+                <button class="product-card-button button-2">В ИЗБРАННОЕ</button>
+                <b class="product-card-stars">**</b>
+                <b class="product-card-raiting">5,0</b>
               </li>
             </ul>
 
              <!--   прокрутка страниц карточек-->
-            <ul class="pagination">
+            <ol class="pagination">
                 <li class="pagination-item">
                     <a class="pagination-link pagination-prev pagination-disabled">
                         <span class="visually-hidden">Предыдущая страница</span>
@@ -222,6 +216,9 @@
                     <a class="pagination-link" href="#">4</a>
                 </li>
                 <li class="pagination-item">
+                    <a class="pagination-link" href="#">...</a>
+                </li>
+                <li class="pagination-item">
                     <a class="pagination-link" href="#">10</a>
                 </li>
                 <li class="pagination-item">
@@ -229,7 +226,7 @@
                         <span class="visually-hidden">Следующая страница</span>
                     </a>
                 </li>
-            </ul>
+            </ol>
             <button class="button pagination-show-more" type="button">Показать ещё</button>
         </section>
 
