@@ -7,18 +7,19 @@
   <body>
 
     <header class="page-header">
-      <nav class="navigation">
-          <a class="navigation-logo" href="index.html">
+       <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" alt="Логотип СЕДОНА."  src="">
-          </a>
+       </a>
+
+      <nav class="navigation">
           <ul class="navigation-list">
               <li class="navigation-item">
-                  <a class="navigation-link" href="#">
+                  <a class="navigation-link" href="index.html">
                       Главная
                   </a>
               </li>
               <li class="navigation-item">
-                  <a class="navigation-link" href="about.html">
+                  <a class="navigation-link" href="#">
                       О Седоне
                   </a>
               </li>
@@ -39,13 +40,13 @@
               <li class="navigation-item">
                 <a class="navigation-link"  href="#">
                     <span class="visually-hidded">
-                    Лайки одобрения
+                    ИЗБРАННОЕ
                     </span>
                 </a>
             </li>
             <li class="navigation-item">
                 <a class="navigation-link"  href="#">
-                    Хочу сюда  Вход
+                    ХОЧУ СЮДА!
                 </a>
             </li>
         </ul>
@@ -221,21 +222,6 @@
                     <a class="pagination-link" href="#">4</a>
                 </li>
                 <li class="pagination-item">
-                    <a class="pagination-link" href="#">5</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">6</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">7</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">8</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">9</a>
-                </li>
-                <li class="pagination-item">
                     <a class="pagination-link" href="#">10</a>
                 </li>
                 <li class="pagination-item">
@@ -247,51 +233,52 @@
             <button class="button pagination-show-more" type="button">Показать ещё</button>
         </section>
 
-        <section class="newsletter">
-            <h2 class="newsletter-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-            <h3 class="newsletter-subtitle">Только полезная информация и никакого спама, честное бойскаутское</h3>
-            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" metod="post">
-                <label for="newsletter-email" >Ваш е-mail</label>
-                <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-                <button class="button newsletter-button" type="submit">
-                    <span class="visually-hidden">ПОДПИСАТЬСЯ</span>
+
+
+
+        <section class="subscribe">
+            <h2  class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+            <h3  class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</h3>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" metod="post">
+                <label for="subscribe-email" >Ваш е-mail</label>
+                <input class="field" placeholder="email@example.com" type="email" name="subscribe-email" id="subscribe-email" required>
+                <button class="button subscribe-button" type="submit">
+                    <span class="button">ПОДПИСАТЬСЯ</span>
                 </button>
             </form>
         </section>
- </main>
+       </main>
 
-<footer class="page-footer">
+       <footer class="page-footer">
+         <section class="footer-social">
+            <h2 class="visually-hidden"> Мы в социальных сетях</h2>
+            <ul class="footer-social">
+                <li class="footer-social-item">
+                    <a class="button footer-button-VK"   href="https:/vk.com/htmlacademy">
+                        <span class="visually-hidden">ВКонтакте</span></a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="button footer-button-T"   href="https:/t.me/htmlacademy">
+                        <span class="visually-hidden">Телеграм</span></a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="button footer-button-Youtube"   href="https:/www.youtube.com/htmlacademyru">
+                        <span class="visually-hidden">Youtube</span></a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="footer-contacts-phone">Наш телефон </h2>
+            <adress class="footer-contacts-address">
+                <a  class="footer-contacts-address-phone" href="tel:88005558628">8 800 555-86-28</a>
+            </adress>
 
-    <section class="footer-social">
-        <h2 class="visually-hidden"> Мы в социальных сетях</h2>
-        <ul class="footer-social">
-            <li class="footer-social-item">
-                <a class="button"   href="https://vk.com/htmlacademy">
-                    <span class="visually-hidden">ВКонтакте</span></a>
-            </li>
-            <li class="footer-social-item">
-                <a class="button"   href="https://t.me/htmlacademy">
-                    <span class="visually-hidden">Телеграм</span></a>
-            </li>
-            <li class="footer-social-item">
-                <a class="button"   href="https://www.youtube.com/user/htmlacademyru">
-                    <span class="visually-hidden">Youtube</span></a>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2 class="footer-contacts-phone">Наш телефон</h2>
-        <adress class="footer-contacts-address">
-            <a class="footer-contacts-address-phone" href="tel:88005558628">8 800 555-86-28</a>
-        </adress>
-
-    </section>
-    <section>
-        <h2 class="visually-hidden"> Разработчики сайта</h2>
-        <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">. html academy</a></p>
-    </section>
-
- </footer>
+        </section>
+        <section>
+            <h2 class="visually-hidden"> Разработчики сайта</h2>
+            <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">. html academy</a></p>
+        </section>
+    </footer>
 
   </body>
 </html>
