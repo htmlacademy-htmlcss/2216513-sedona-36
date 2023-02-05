@@ -10,7 +10,7 @@
 
         <header class="page-header">
             <a class="page-header-logo" href="index.html">
-                <img class="page-header-logo" alt="Логотип сайта СЕДОНА." src="">
+                <img class="page-header-logo" alt="Логотип сайта СЕДОНА." src="images/logo-sedona.svg" width="140" height="70">
             </a>
 
             <nav class="navigation">
@@ -58,7 +58,7 @@
         </header>
 
         <main class="main-inner">
-            <img class="main-inner" src="img/catalog-background-1.jpg" alt="" width="920" height="378">
+        <!--<img class="main-inner" src="img/catalog-background-1.jpg" alt="" width="920" height="378">-->
             <header class="inner-header">
                 <h1 class="inner-header-title">Гостиницы Седоны</h1>
                 <ul class="breadcrumbs">
@@ -126,9 +126,9 @@
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                         <label for="price-min" class="price-min-label">от</label>
-                        <input type="number" class="price-min-input" id="price-min" name="price-min" value="0" min="0">
+                        <input type="number" class="price-min-input" id="price-min" name="price-min"  value="0"     min="0"    max="5000"  step="100">
                         <label for="price-max" class="price-max-label">до</label>
-                        <input type="number" class="price-max-input" id="price-max" name="price-max"  value="9000"  min="0">
+                        <input type="number" class="price-max-input" id="price-max" name="price-max"  value="9000"  min="5000" max="10000" step="100">
                         <div class="range-container">
                           <div class="range-scale">
                             <div class="range"></div>
@@ -148,8 +148,9 @@
             </section>
 
             <section class="catalog-select-group">
-                <h2 class="catalog-select-title">НАЙДЕНО ГОСТИНИЦ:</h2>
+                <h2 class="catalog-select-title">НАЙДЕНО ГОСТИНИЦ: <span> 38</span></h2>
                 <!--                         вывод числа гостинец  38     -->
+
                 <!-- фильтр сортировки карточек гостиниц   -->
                 <select class="select-control" aria-label="Сортировка">
                     <option value="cheap"> Сначала дешёвые></option>
