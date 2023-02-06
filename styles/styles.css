@@ -1,0 +1,84 @@
+
+@font-face {
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: 400;
+   src: url("../fonts/ptsans-400.woff2") format ("woff2");
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: 700;
+   src: url("../fonts/ptsans-700.woff2") format ("woff2");
+   font-display: swap;
+}
+
+body {
+   font-family: "PT Sans", "Arial", sans-serif;
+   font-size: 16px;
+   line-height: 24px;
+   color:#000;
+   background-color: #FFFFFF;
+}
+.button {
+   font-family: inherit;
+   font-size: 16px;
+   font-weight: 700;
+   text-align: center;
+   color: #000;
+   background-color:goldenrod;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+
+/*  Pages */
+.page-header {
+   color: #000;
+   background-color:#FFFFFF;
+}
+.navigation-link {
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-transform: capitalize;
+
+}
+.main-index {
+   color: black;
+   background-color: white;
+   background-image: url("../images/index-background.jpg");
+   background-size: 100% auto;
+   background-repeat:no-repeat;
+}
+
+/* List */
+.advantages-list {
+   text-align: center;
+}
+
+/* Title */
+.advantages-title {
+   font-size: 32px;
+   line-height: 35px;
+   text-transform: uppercase;
+}
+
+
+
+
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
