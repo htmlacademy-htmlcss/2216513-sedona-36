@@ -15,60 +15,14 @@
    font-display: swap;
 }
 
-body {
-   font-family: "PT Sans", "Arial", sans-serif;
-   font-size: 16px;
-   line-height: 24px;
+body {           /*текст в блоках*/
+   font-family: "PT Sans", sans-serif;
+   font-style: 400;
+   font-size: 18px;
+   line-height: 21px;
    color:#000;
    background-color: #FFFFFF;
 }
-.button {
-   font-family: inherit;
-   font-size: 16px;
-   font-weight: 700;
-   text-align: center;
-   color: #000;
-   background-color:goldenrod;
-   text-decoration: none;
-   text-transform: uppercase;
-}
-
-
-/*  Pages */
-.page-header {
-   color: #000;
-   background-color:#FFFFFF;
-}
-.navigation-link {
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-text-transform: capitalize;
-
-}
-.main-index {
-   color: black;
-   background-color: white;
-   background-image: url("../images/index-background.jpg");
-   background-size: 100% auto;
-   background-repeat:no-repeat;
-}
-
-/* List */
-.advantages-list {
-   text-align: center;
-}
-
-/* Title */
-.advantages-title {
-   font-size: 32px;
-   line-height: 35px;
-   text-transform: uppercase;
-}
-
-
-
-
 
 .visually-hidden {
    position: absolute;
@@ -81,4 +35,158 @@ text-transform: capitalize;
    clip-path: inset(100%);
    clip: rect(0 0 0 0);
    overflow: hidden;
+}
+
+.button {
+   font-family: inherit;
+   font-size: 16px;
+   line-height: 20px;
+   font-weight: 700;
+   text-align: center;
+   color: #000;
+   background-color:goldenrod;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+.page-header {
+   color: #000;
+   background-color:#FFFFFF;
+}
+.navigation-link {
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #000;
+background-color: #FFFFFF;
+text-decoration: none;
+}
+
+.main-index {
+   color: black;
+   text-align: center;
+   background-color: #FFFFFF;
+   background-image: url("../images/jpg-compact/index-background.jpg");
+   background-size: 100% auto;
+   background-repeat:no-repeat;
+}
+
+.main-index-title {
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 36px;
+   text-transform: uppercase;
+}
+
+.main-index-subtitle {
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 26px;
+}
+
+.advantages-list {
+color: #000;
+}
+.item-blue3{
+color: #FFFFFF;
+background-color:blue ;
+}
+.item-blue2{
+background-color:#FFFFFF ;
+}
+.item-blue1{
+color: #000;
+background-color:skyblue ;
+}
+
+.advantages-title {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 28px;
+   text-transform: uppercase;
+}
+.advantages-description {
+ color: #000;
+}
+.subscribe-index {
+   color: black;
+   text-align: center;
+   background-color: #FFFFFF;
+   background-image: url("../images/jpg-compact/background-subscribe.jpg");
+   background-size: 100% auto;
+   background-repeat:no-repeat;
+}
+.subscribe-form {
+   color: #000;
+   font-size: 18px;
+   line-height: 24px;
+}
+.page-footer {
+   color: #000;
+   background-color: #FFFFFF;
+}
+.footer-link {
+   color: #000;
+   background-color: #FFFFFF;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 40px;
+   text-align: center;
+   text-transform: uppercase;
+   text-decoration: none;
+}
+
+.main-inner{
+   color: black;
+   background-color: #FFFFFF;
+   background-image: url("../images/jpg-compact/background-filter.jpg");
+   background-size: 100% auto;
+   background-repeat:no-repeat;
+}
+.inner-header-title{
+   color: #000;
+}
+.breadcrumbs{
+   color:#242424
+}
+.breadcrumbs-link{
+   color:inherit
+}
+.control-label{
+   font-weight: 700;
+}
+.sorting-container{
+   color: #000;
+   background-color: #FFFFFF;
+}
+.button-light{
+   color: #242424;
+   background-color: #FFFFFF;
+}
+.product-card{
+   background-color: #FFFFFF;
+}
+.product-card-link{
+   text-decoration: none;
+}
+.product-card-title{
+   font-size: 24px;
+   font-weight: 700;
+}
+.pagination{
+   background-color: #FFFFFF;
+}
+.pagination-link{
+   color: #FFFFFF;
+   background-color: #000;
+   text-decoration: none;
+   line-height: 16px;
+   font-weight: 700;
+}
+.pagination-current{
+   color: #242424;
+   background-color: #FFFFFF;
+}
+.pagination-disabled{
+   background-color: #595959;
 }
