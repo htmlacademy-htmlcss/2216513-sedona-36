@@ -69,9 +69,7 @@
                 <img class="hero-image" alt="WELCOME to the gargeous SEDONA, because the Grand Canyon sucks"
                     src="images/svg-compact/welcome.svg" width="458" height="552">
             </section>
-
-            <section>
-            <!--<img src="images/divider.png" width="1200" height="57" alt="">-->
+            <section class="sedona">
                 <h2 class="main-index-title">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
                 <p  class="main-index-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
             </section>
@@ -79,33 +77,37 @@
             <section class="advantages">
                 <h2 class="visually-hidden">Наши преимущества</h2>
                 <img class="advantages-image" alt="Вид на отель в туристическом городке Седона" src="images/jpg-compact/photo-1.jpg"
-                    width="800" height="384">
+                width="800" height="384">
                 <ul class="avantages-list">
-                    <li class="advantages-item item-blue3">
-                        <h3 class="advantage-title">НАСТОЯЩИЙ ГОРОДОК</h3>
+                    <li class="advantages-item item-toun">
+                    <!--<img class="advantages-image item-toun" alt="Вид на отель в туристическом городке Седона" src="images/jpg-compact/photo-1.jpg"
+                        width="800" height="384">-->
+                    <h3 class="advantage-title">НАСТОЯЩИЙ ГОРОДОК</h3>
                         <p  class="advantage-description">
                             Седона не атракцион для туристов, там течёт своя жизнь
                         </p>
                     </li>
-                    <li class="advantages-item">
+                    <li class="advantages-item item-square">
                         <h3 class="advantage-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
                         <p  class="advantage-description">
                             Все достопримечательности находятся близко
                         </p>
                     </li>
-                    <li class="advantages-item item-blue1">
+                    <li class="advantages-item item-road">
                         <h3 class="advantage-title">КРАСИВАЯ ДОРОГА</h3>
                         <p  class="advantage-description">
                             Ехать в Седону из Лас-Вегаса совсем не скучно!
                         </p>
                     </li>
-                    <li class="advantages-item">
+                    <li class="advantages-item item-tourist">
                         <h3 class="advantage-title">МАЛО ТУРИСТОВ</h3>
                         <p  class="advantage-description">
                             Большинство едет в Гранд Каньон и толпится там
                         </p>
                     </li>
-                    <li class="advantages-item item-blue3">
+                    <li class="advantages-item item-bridge">
+                        <!--<img class="advantages-image" alt="Вид на Мост Дьявола" src="images/jpg-compact/photo-2.jpg"   width="800"
+                          height="385">-->
                         <h3 class="advantage-title">ТАМ ЕСТЬ МОСТ ДЪЯВОЛА</h3>
                         <p class="advantage-description">
                             Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -113,7 +115,7 @@
                     </li>
                 </ul>
                 <img class="advantages-image" alt="Вид на Мост Дьявола" src="images/jpg-compact/photo-2.jpg"   width="800"
-                    height="385">
+                height="385">
             </section>
 
             <section class="services">
@@ -122,7 +124,7 @@
                     Опытный персонал и качественное обслуживание!
                 </p>
                 <ul class="advantages-list">
-                    <li class="advantages-item">
+                    <li class="advantages-item item-home">
                         <h3 class="advantages-title">ЖИЛЬЁ</h3>
                         <!--<img class="services-vector" alt="отель" src="images/service-1.svg" width="400" height="385">-->
                         <p  class="advantages-description">
@@ -136,7 +138,7 @@
                             Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
                         </p>
                     </li>
-                    <li class="advantages-item">
+                    <li class="advantages-item item-present">
                         <h3 class="advantages-title">СУВЕНИРЫ</h3>
                         <!--<img class="services-vector" alt="сувенир" src="images/service-3.svg" width="400" height="385">-->
                         <p class="advantages-description">
@@ -163,8 +165,8 @@
                 <h2 class="main-index-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
                 <h3 class="main-index-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</h3>
                 <form class="subscribe-form" action="https://echo.htmlacademy.ru/" metod="post">
-                    <label for="subscribe-email">Ваш е-mail</label>
-                    <input class="field" placeholder="email@example.com" type="email" name="subscribe-email"
+                    <label for="subscribe-email"></label>
+                    <input class="subscribe-email" placeholder="Ваш е-mail" type="email" name="subscribe-email"
                         id="subscribe-email" required>
                     <button class="button subscribe-button" type="submit">
                         <span class="button">ПОДПИСАТЬСЯ</span>
