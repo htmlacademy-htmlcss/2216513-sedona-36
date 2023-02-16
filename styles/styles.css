@@ -62,68 +62,91 @@ height: 100%;
  width: 1060px;
  max-height: 64px;
  margin: 0 auto;
+
  display: flex;
  justify-content: space-between;
 }
 .page-header{
-   height: 64px;
+   height: 64px;/* */
    color: #000;
    background-color:#FFFFFF;
-}
-
-.navigation {
-display: flex;
-width: 892px;
-height: 64px;
-margin: 0 auto;
-justify-content: space-between;
-/*outline:4px solid  green;*/
 }
 
 .navigation-logo{
    width: 140px;
    margin-right: 28px;
 }
+
 .logo {
    display: block;
    margin: 0 auto;
   }
+
+.navigation {
+   display: flex;
+   width: 892px;
+   margin: 0 auto;
+
+   height: 64px;
+   justify-content: space-between;
+   /*outline:4px solid  green;*/
+   }
+
 .navigation-list{
  display: flex;
- max-width: 440px;
- list-style: none;
-margin: 0;
-padding: 0;
-/*outline:4px solid red;*/
+ flex-wrap: wrap;
+
+/* width: 340px;*/
+
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+ /*outline:4px solid red;*/
 }
+
+.navigation-link {
+   display: block;
+   padding: 22px 10px;
+
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: center;
+   color: #000;
+   background-color: #FFFFFF;
+   text-decoration: none;
+   }
+
+
 .navigation-item{
    max-width: 339px;
    /*outline:4px solid yellow;*/
 }
 .navigation-user{
-max-width: 268px;
-margin-left: auto;
+max-width: 500px;
+margin-left: auto;/*????*/
+
 /*outline:4px solid blue;*/
 }
+/*.navigation-user .navigation-link {
+   min-width: 16px;
+   min-height: 22px;
+}*/
 .header-button{
 width: 160px;
+margin-left: 20px;
+padding: 0;
 /*outline:4px solid olive;*/
+font-size: 16px;
+line-height: 20px;
+color:#FFFFFF;
+background-color:#756157;
+text-transform: uppercase;
 }
-
-.item-user{
+/*.item-user{
 width: 44px;
-/*outline:4px solid darkcyan;*/
-}
-
-.navigation-link {
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-color: #000;
-background-color: #FFFFFF;
-text-decoration: none;
-}
-
+outline:4px solid darkcyan;
+}*/
 
 .page-container{
    min-height: 100%;
@@ -315,8 +338,8 @@ background-color:rgba(131,179,211,0.2) ;
    width: 1200px;
    height: 415px;
    margin: 0 auto;
-   color: black;
-   background-color: #FFFFFF;
+   color:#FFFFFF;
+   background-color:#82B3D3;
    background-image: url("../images/jpg-compact/background-subscribe.jpg");
    background-size: 100% auto;
    background-repeat:no-repeat;
@@ -329,7 +352,7 @@ background-color:rgba(131,179,211,0.2) ;
 }
 .subscribe {
    width: 1200px;
-   height: 684px;
+   height: 415px;
    margin: 0 auto;
    color: black;
    text-align: center;
@@ -370,7 +393,7 @@ background-color:rgba(131,179,211,0.2) ;
    font-size: 30px;
    line-height: 36px;
    text-transform: uppercase;
-   color:#FFFFFF;
+   /*color:#FFFFFF;*/
 
    margin-top:0;
 }
@@ -378,7 +401,7 @@ background-color:rgba(131,179,211,0.2) ;
    font-weight: 400;
    font-size: 22px;
    line-height: 26px;
-   color:#FFFFFF;
+   /*color:#FFFFFF;*/
 }
 
 .main-inner{
@@ -475,40 +498,39 @@ width: 1060px;
    background-color: #FFFFFF;
 }
 .page-footer-container{
-display: flex;
-width: 1060px;
-height: 50px;
-margin: 0 auto;
-justify-content: space-between;
-/*align-items: center;*/
-/*outline:4px solid green;*/
+   display: flex;
+   width: 1200px;
+   margin: 0 auto;
+   padding: 9px 0;
 }
+.footer-contacts {
+   width: 720px;
+   margin: 0 auto;
+   text-align: center;
+   /*outline:4px solid red;*/
+ }
 
-/*
 .footer-social {
-  width: 144px;
- /* display: flex;*
-  margin: 0 auto;
+  margin-right:auto;
+  max-width: 150px;
   outline:4px solid olive;
 }
-*/
-.footer-contacts {
-width: 720px;
-margin: 0 auto;
-text-align: center;
-/*outline:4px solid red;*/
-}
 .footer-social-list{
-   width: 144px;
-   margin: 0 auto;
    display: flex;
-   justify-content:flex-end;
-   list-style: none;
+   flex-wrap: wrap;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
 }
 .footer-social-item{
   width: 48px;
   height: 40px;
-  /*outline:4px solid orange;*/
+  margin-right: 2px;
+  margin-bottom: 2px;
+ outline:4px solid orange;
+}
+.footer-social-item:nth-child(3n) {
+   margin-right: 0;
 }
 .footer-logo{
  width: 115px;
