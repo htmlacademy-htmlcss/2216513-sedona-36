@@ -411,18 +411,44 @@ background-color:rgba(131,179,211,0.2) ;
    background-size: 100% auto;
    background-repeat:no-repeat;
 }
-.inner-header-title{
+.inner-header{
+   width: 1060px;
+   min-height: 107px; /**/
+   margin: 0 auto;
+   text-align: left;
    color: #FFFFFF;
+   outline:4px solid red;
 }
-.breadcrumbs{
-   color:#FFFFFF;
+.inner-header-title {
+   font-weight: 700;
+   font-size: 60px;
+   line-height: 78px;
+
+   margin-bottom: 0;
 }
-.breadcrumbs-link{
+.breadcrumbs-list{
+   display: flex;
+   flex-wrap: wrap;
+
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+}
+.breadcrumbs-link {
+   display: block;
+   padding: 4px 10px;
+
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 21px;
    color: #FFFFFF;
    text-decoration: none;
-
-width: 1060px;
 }
+.breadcrumbs-item {
+   min-width:  16px;
+   min-height: 21px;
+}
+
 
 /*
 .index-columns{
@@ -435,14 +461,79 @@ background-image: url("../images/svg-compact/icon-home.svg");
 }
 */
 .catalog-filter-group{
-   color:#FFFFFF;
+  width: 1060px;
+  margin: 0 auto;
+  color:#FFFFFF;
+}
+.catalog-filter{
+display: grid;
+grid-template-areas:
+"group-1 group-2 group-3 group-4"
+;
+grid-template-rows:150px ;
+column-gap: 20px;
+}
+.catalog-filter-group-1{
+   grid-area: group-1;
+}
+.catalog-filter-group-2{
+   grid-area: group-2;
+}
+.catalog-filter-group-3{
+   grid-area: group-3;
+}
+.catalog-filter-group-4{
+   grid-area: group-4;
 }
 
+.select {
+   padding-left: auto;
+
+   width: 522px;
+   display: flex;
+   justify-content: space-between;
+   outline:4px solid olive;
+}
+.select-title {
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 36px;
+   text-transform: uppercase;
+   margin-bottom: 0;
+}
 .sorting-container{
+   width: 1060px;
+   padding: 0;
+   margin: 0;
+   padding-left: 70px;
+
+   display: flex;
+   justify-content: space-between;
    color: #000;
    background-color: #FFFFFF;
 }
-.button-in-frame{
+.view-link {
+   display: block;
+   padding: 22px 10px;
+
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 21px;
+   color: #FFFFFF;
+   text-decoration: none;
+}
+.view-list {
+   display: flex;
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+}
+.view-item {
+   min-width:  48px;
+   min-height: 40px;
+}
+
+.in-frame{
    color: #242424;
    background-color: #FFFFFF;
 }
