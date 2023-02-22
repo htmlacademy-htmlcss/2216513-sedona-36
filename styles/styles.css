@@ -442,7 +442,7 @@ background-color:rgba(131,179,211,0.2) ;
 }
 
 
-.catalog-filter-group {
+.catalog-filter-hotels {
   margin: 0 auto;
 
   margin-top: 40px;
@@ -452,31 +452,38 @@ background-color:rgba(131,179,211,0.2) ;
   outline:4px solid olive;
   /*width: 1060px;*/
 }
-.catalog-filter {
-   color: #FFFFFF;
-display: grid;
-grid-template-areas:
-"group-1 group-2 group-3 group-4"
-;
-grid-template-rows:160px ;
-column-gap: 50px;
+.filter-wrapper-left {
+   width: 371px;
+   display: flex;
+   justify-content: space-between;
 }
-.catalog-filter-group-1{
-   grid-area: group-1;
-   width: 150px;
+.filter-wrapper-right {
+   width: 549px;
+   display: flex;
+   justify-content: space-between;
 }
-.catalog-filter-group-2{
-   grid-area: group-2;
-   width: 150px;
+.catalog-filter-group {
+  text-align: left;
+  border: none;
+  color: #FFFFFF;
+   /*display: flex;
+   justify-content: space-between;*/
 }
-.catalog-filter-group-3{
-   grid-area: group-3;
-   width: 220px;
+
+.catalog-filter-title {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 24px;
 }
-.catalog-filter-group-4{
-   grid-area: group-4;
-   width: 220px;
+.catalog-filter-list {
+   width: 151.43px;
+   padding-left: 0;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 23px;
+   list-style-type: none;
 }
+
 
 /*************************/
 .catalog-products-group {

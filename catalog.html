@@ -87,12 +87,17 @@
                                 </li>
                             </ul>
                         </header>
+
+                     <div class="catalog-filter-hotels">
                         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
                         <!---Фильтрация-->
+
                         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
 
-                            <fieldset class="catalog-filter-group-1">
-                                <legend class="catalog-filter-title">Инфраструктура :</legend>
+                            <div class="filter-wrapper-left">
+                            <fieldset class="catalog-filter-group">
+                                <legend class="catalog-filter-title">Инфраструктура:</legend>
+
                                 <ul class="catalog-filter-list">
                                     <li class="catalog-filter-item">
                                         <label class="control">
@@ -112,8 +117,8 @@
                                 </ul>
                             </fieldset>
 
-                            <fieldset class="catalog-filter-group-2">
-                                <legend class="catalog-filter-title">Тип Жилья :</legend>
+                            <fieldset class="catalog-filter-group">
+                                <legend class="catalog-filter-title">Тип Жилья:</legend>
                                 <ul class="catalog-filter-list">
                                     <li class="catalog-filter-item">
                                         <label class="control">
@@ -135,10 +140,10 @@
                                     </li>
                                 </ul>
                             </fieldset>
-
+                            </div>
                             <!--  Стоимость, Р:  0 от  9000 до   с ползунком -->
-
-                            <fieldset class="catalog-filter-group-3">
+                            <div class="filter-wrapper-right">
+                            <fieldset class="catalog-filter-group">
                                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                                 <label for="price-min" class="price-min-label">от</label>
                                 <input type="number" class="price-min-input" id="price-min" name="price-min" value="0"
@@ -159,11 +164,14 @@
                                 </div>
                             </fieldset>
 
-                            <div class="catalog-filter-group-4">
+                            <div >
                                 <button class="button catalog-button" type="submit">ПРИМЕНИТЬ</button>
                                 <button class="button catalog-button" type="reset">СБРОСИТЬ </button>
                             </div>
+
+                            </div>
                         </form>
+                    </div>
                     </section>
 
                     <section class="catalog-select-group" data-test="catalog">
