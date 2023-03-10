@@ -205,6 +205,65 @@
                     </section>
                 </div>
             </footer>
+
+
+            <div class="modal-container modal-container-close">
+                <div class="modal modal-auth">
+                    <butten class="modal-close-button">
+                        <span class="visually-hidden">Закрыть</span>
+                    </butten>
+                    <section class="modal-content">
+                        <h2 class="modal-title">
+                            Поиск гостиницы в Седоне
+                        </h2>
+                        <form class="auth-form" action="https://echo.htmlacademy.ru/" metod="post">
+                            <p class="field-group">
+                                <label for="" class="visually-hidden">Дата заезда:</label>
+                                <input class="auth-form field"  type="text" id="data-arrival" name="data-arrival" placeholder="27 апреля 2020">
+                                <span>svg</span>
+
+                                <span class="data-arrival">Мы не можем отправить вас в прошлое.</span>
+                            </p>
+                            <p class="field-group">
+                                <label for="" class="visually-hidden">Дата выезда:</label>
+                                <input class="auth-form field"  type="text" id="data-departure" name="data-departure" placeholder="1 сентября 2023">
+                                <span>svg</span>
+
+                                <span class="data-departure">На эти даты есть свободные номера. Пока есть.</span>
+                            </p>
+                            <div class="group-adults">
+                                <p  class="field-group">Взрослые:</p>
+                                <div class="buttons-wrapper">
+                                    <button class="button-add" ></button>
+                                    <span>2</span>
+                                    <button class="button-del" ></button>
+                                </div>
+                            </div>
+
+                            <div class="group-children">
+                                <p  class="field-group">Дети:</p>
+                                <span class="tooltip-children" >
+                                <button class="tooltip-children" type="button" aria-labelledby="tooltip-label-children">
+                                   <svg class="tooltip-icon"  >?????</svg>
+                                </button>
+                                <span class="tooltip-text" role="tooltip" id="tooltip-label-children" >Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                                <span class="children">
+                                    <label for="">Дети</label>
+                                </span>
+                                </span>
+                                <div class="buttons-wrapper">
+                                    <button class="button-add" ></button>
+                                    <span>2</span>
+                                    <button class="button-del" ></button>
+                                </div>
+                            </div>
+
+                            <button class="auth-form-button" type="submit"> Найти</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+
         </div>
     </body>
 

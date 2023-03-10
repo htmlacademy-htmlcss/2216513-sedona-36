@@ -1102,6 +1102,7 @@ body {
    border: none;
    border-radius: 4px;
 }
+
 .button-filter-submit:hover {
    background-color: #615048;
    border-color: #615048;
@@ -1756,7 +1757,6 @@ body {
 .footer-social-item {
    width: 25px;
    margin-right: 2px;
-   /**/
    margin-bottom: 2px;
 }
 
@@ -1767,7 +1767,6 @@ body {
 .footer-social-item:nth-child(3n) {
    margin-right: 0;
 }
-
 
 .footer-social-link {
    position: relative;
@@ -1845,4 +1844,214 @@ body {
 
 .footer-link-htmlacademy:active {
    color: rgba(117, 97, 87, 0.3);
+}
+
+/****************************************/
+.modal-container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(242, 242, 242, 0.8);
+}
+.modal-container-close {
+   display: none;
+}
+.modal {
+   position: relative;
+   margin: auto;
+   padding: 40px;
+   background-color: #ffffff;
+}
+
+.modal-auth {
+   width: 717px;
+   border-radius: 10px;
+}
+
+.modal-close-button {
+   position: absolute;
+   padding: 0;
+   top: 0;
+   right: 0;
+   width: 56px;
+   height: 44px;
+   background-color: #ffffff;
+   border: none;
+   background-image: url("../images/svg-compact/icon-x.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+
+.modal-title {
+   margin: 0;
+   margin-bottom: 2px;
+
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 26px;
+   text-align: left;
+   text-transform: uppercase;
+   color: #000;
+}
+
+.auth-form .field-group {
+   margin: 0;
+   margin-bottom: 16px;
+   padding: 0;
+}
+.field-group {
+
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 38px;
+   line-height: 24px;
+   text-align: left;
+   text-transform: capitalize;
+   color: #000;
+}
+
+.auth-form .field {
+   width: 328px;
+   background-color: #f2f2f2;
+}
+
+.tooltip {
+   position: absolute;
+   margin-top: 4px;
+   margin-left: 2px;
+   width: 16px;
+   height: 16px;
+}
+
+.tooltip-children {
+   border: none;
+   background-color: #000000;
+   padding: 0;
+   margin: 0;
+   display: block;
+}
+
+.tooltip-icon {
+   width: 100%;
+   height: 100%;
+   color: #82b3d3;
+   display: block;
+}
+
+.tooltip-children:hover .tooltip-icon {
+   color: #3f5e72;
+}
+
+.tooltip-text {
+   background-color: #000000;
+   color: #333333;
+   font-family: inherit;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 21px;
+   text-transform: none;
+   padding: 5px 8px;
+   border-radius: 8px;
+   /* display: block;*/
+   width: 160px;
+   position: absolute;
+   bottom: 100%;
+   margin-bottom: 6px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1;
+   display: none;
+}
+
+.tooltip-children:hover + .tooltip-text,
+.tooltip-children:focus + .tooltip-text {
+   display: block;
+}
+
+.tooltip-text:after {
+   content: '';
+   background-image: url("../images/svg-compact/tooltip-arrow.svg");
+   width: 14px;
+   height: 6px;
+   position: absolute;
+   /*transform: rotate(180deg);*/
+   top: 100%;
+   left: 0;
+   right: 0;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.data-arrival {
+   width: 280px;
+   font-family: inherit;
+   font-weight: 400;
+   font-style: 16px;
+   line-height: 21px;
+   color: #ff5757;
+   align-items: center;
+}
+
+.data-departure {
+   width: 331px;
+   font-family: inherit;
+   font-weight: 400;
+   font-style: 16px;
+   line-height: 21px;
+   color: #333333;
+   align-items: center;
+}
+.group-adults {
+
+}
+.group-children {
+
+}
+
+.buttons-wrapper {
+   width: 110px;
+   height: 24px;
+   display: flex;
+   gap:20px;
+   border: none;
+   background-color: #333333;
+   border-radius: 4px;
+}
+.button-add {
+  width:45px ;
+  position: relative;
+}
+.button-del {
+  width: 45px;
+  position: relative;
+}
+.auth-form-button {
+   box-sizing: border-box;
+   width: 577px;
+   height: 36px;
+
+   margin: 13px 0 0 0;
+   padding: 0;
+
+   /*margin-bottom: 16px;*/
+
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 20px;
+
+   text-transform: uppercase;
+   text-align: center;
+   text-decoration: none;
+
+   color: #ffffff;
+   background-color: #83b3d3;
+
+   border: none;
+   border-radius: 10px;
 }
