@@ -21,7 +21,8 @@ html {
 body {
    margin: 0;
    height: 100%;
-   font-family: "PT Sans", sans-serif;
+   font-family: "PT Sans";
+   /*font-family: "PT Sans", sans-serif;*/
    font-weight: 400;
    font-size: 18px;
    line-height: 21px;
@@ -126,7 +127,7 @@ body {
    justify-content: flex-start;
    column-gap: 25px;
 
-   margin: 0 0 0 119px;
+   margin: 0 0 0 125px;
    padding: 0;
 
    list-style-type: none;
@@ -206,8 +207,8 @@ body {
    display: block;
    box-sizing: border-box;
 
-   margin: 14px 0 12px 15px;
-   padding: 9px 29px;
+   margin: 14px 0 12px 17px;
+   padding: 8.5px 34.5px;
 
    font-family: inherit;
    font-weight: 700;
@@ -1007,7 +1008,6 @@ body {
    height: 20px;
    border-radius: 50%;
    background: #ffffff;
-  /* border-radius: 4px;*/
    position: absolute;
    left: 0;
    top: 0;
@@ -1324,7 +1324,7 @@ body {
 
 .select {
    padding-left: auto;
-   width: 524px;
+   width: 522px;
    /*522*/
 
    display: flex;
@@ -1346,11 +1346,11 @@ body {
    border: 2px solid #e5e5e5;
    border-radius: 4px;
 
-   padding: 12px 20px;
+   padding: 12px 24px;
 
    background-image: url("../images/svg-compact/icon-v.svg");
    background-repeat: no-repeat;
-   background-position: right 18px center;
+   background-position: right 17px center;
 
    padding-right: 40px;
 }
@@ -1413,7 +1413,7 @@ body {
    display: flex;
    gap: 8px;
 
-   padding: 0 2px 0 0;
+   padding: 0 4px 0 0;
    margin: 0;
 
    list-style-type: none;
@@ -1488,7 +1488,7 @@ body {
 
 
 .flex-wrapper-2 {
-   margin: 0 20px 0 20px;
+   margin: 1px 20px 0 20px;
 
    display: flex;
    justify-content: space-between;
@@ -1867,6 +1867,7 @@ body {
 .footer-social {
    margin-right: auto;
    padding: 0 0 0 10px;
+   color:#68a2ca;
 }
 
 .footer-social-list {
@@ -1891,6 +1892,7 @@ body {
 
 .footer-social-icon {
    min-width: 25px;
+   color:#68a2ca;
 }
 
 .footer-social-item:nth-child(3n) {
@@ -1976,62 +1978,7 @@ body {
 }
 
 /****************************************/
-.modal-container {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(242, 242, 242, 0.8);
-   display: none;
-}
 
-.modal-container-open {
-   display: flex;
-}
-.modal-container-close {
-   display: none;
-}
-.modal {
-   position: relative;
-   margin: auto;
-   padding: 35px;
-   background-color: #ffffff;
-}
-
-.modal-auth {
-   width: 640px;
-   border-radius: 10px;
-}
-
-.modal-close-button {
-   position: absolute;
-   padding: 0;
-   top: 78;
-   right: 48;
-   width: 56px;
-   height: 44px;
-   background-color: #83b3d3;
-   border-radius: 50%;
-   border: none;
-   background-image: url("../images/svg-compact/icon-x.svg");
-   background-repeat: no-repeat;
-   background-position: center;
-   cursor: pointer;
-}
-
-.modal-title {
-   margin: 0;
-   margin-bottom: 70px;
-
-   font-family: inherit;
-   font-weight: 700;
-   font-size: 30px;
-   line-height: 26px;
-   text-align: left;
-   text-transform: uppercase;
-   color: #000;
-}
 /*
 .auth-form .field-group {
    margin: 0;
@@ -2190,23 +2137,77 @@ body {
    border-radius: 10px;
 }
 ************************************************/
-.auth-form {
 
-   margin: 0;
+.modal-container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(242, 242, 242, 0.8);
+   display: none;
+}
+
+.modal-container-open {
+   display: flex;
+}
+.modal-container-close {
+   display: none;
+}
+.modal {
+   position: relative;
+   margin: auto;
+  /* padding: 35px;*/
+   background-color: #ffffff;
+}
+
+.modal-auth {
+   width: 717px;
+   padding: 69px 70px;
+   border-radius: 30px;
+}
+
+.modal-close-button {
+   position: absolute;
    padding: 0;
-   margin-top: 60px;
+   top: 70;
+   right: 50;
+   width: 56px;
+   height: 44px;
+   background-color: #83b3d3;
+   border-radius: 50%;
+   border: none;
+   background-image: url("../images/svg-compact/icon-x.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+
+.modal-title {
+   margin: 0 0 0 35px;
+   padding: 30px 0 0 0;
+
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 26px;
+   text-align: left;
+   text-transform: uppercase;
+   color: #000;
+}
+.auth-form {
+   width: 577px;
+   margin: 0 30px;
+   padding: 40px 0 0 0;
 }
 
 .field-group {
- margin: 0;
- padding: 0;
- padding-bottom: 40px;
+ padding-bottom: 23px;
 }
 .input-date {
-   width: 395px;
-   margin: 0;
-   margin-left: 24px;
-   padding: 12px 18px;
+   width: 440px;
+   margin: 0 440px 0 0;
+   padding: 12px 20px;
 
    font-family: inherit;
    font-weight: 700;
@@ -2222,7 +2223,10 @@ body {
    border: none;
    border-radius: 4px;
 }
-.field-amount {
+
+.field-date {
+   margin: 0;
+   padding:  0;
 
    font-family: inherit;
    font-weight: 700;
@@ -2233,27 +2237,30 @@ body {
    color: #000;
    background-color: #ffffff;
 }
-.field-date {
-   margin: 0 24px;
-   padding:  0 0 0 24px;
+.field-amount {
+   padding: 0;
+   /*appearance: none;*/
+   appearance: textfield;
+   z-index: 1;
 
    font-family: inherit;
    font-weight: 700;
-   font-size: 20px;
+   font-size: 18px;
    line-height: 24px;
    text-align: left;
    text-transform: capitalize;
-   color: #000;
-   background-color: #ffffff;
+   color: #000000;
+   background-color: #f2f2f2;
+   border-radius: 4px;
 }
 .input-amount {
-   width: 50px;
+   width: 31px;
    box-sizing: border-box;
-   /*position: relative;*/
-   padding: 10px;
+   position: relative;
+   padding: 12px;
 
-   appearance: none;
-   /*appearance: textfield;*/
+   /*appearance: none;*/
+   appearance: textfield;
    z-index: 1;
 
    font-family: inherit;
@@ -2307,14 +2314,14 @@ body {
 }
 
 .tooltip-text {
-display: block;
+   display: block;
    width: 160px;
    position: absolute;
 
-   bottom: 100%;
-   margin-bottom: 6px;
-   left: 50%;
-  /* transform: translateX(-50%);*/
+   top: 100%;
+   margin-top: 4px;
+   left: 70%;
+   transform: translateX(-50%);
    z-index: 1;
 
    padding: 5px 8px;
@@ -2328,7 +2335,6 @@ display: block;
    text-transform: none;
 
    border-radius: 10px;
-
   /* display: none;*/
 }
 
@@ -2339,11 +2345,11 @@ display: block;
 /* скобка */
 .tooltip-text:after {
    content: '';
-   background-image: url("../images/svg-compact/tooltip-arrow.svg");
+   background-image: url("../images/svg-compact/modal-icon-calendar.svg");
    width: 14px;
    height: 6px;
    position: absolute;
-   /*transform: rotate(180deg);*/
+   transform: rotate(180deg);
    top: 100%;
    left: 0;
    right: 0;
@@ -2352,38 +2358,41 @@ display: block;
 }
 
 .date-arrival-p {
-   width: 280px;
-   padding: 0 24px;
+   /*width: 280px;*/
+   padding: 0 420px 0 0;
 
    font-family: inherit;
    font-weight: 400;
-   font-style: 16px;
+   font-size: 16px;
    line-height: 21px;
    color: #ff5757;
-  text-align: center;
+   text-align: left;
 }
 
 .date-departure-p {
-   width: 331px;
-   padding: 0 24px;
+   /*width: 331px;*/
+   padding: 0 420px 0 0;
 
    font-family: inherit;
    font-weight: 400;
-   font-style: 16px;
+   font-size: 16px;
    line-height: 21px;
    color: #333333;
-   text-align: center;
+   text-align: left;
 }
 .group-adults {
-
+margin: 0;
+padding: 0;
+margin-right: auto;
 }
 .group-children {
-
+margin: 0;
+padding: 0;
+margin-left: auto;
 }
 
 .buttons-wrapper {
-   width: 110px;
-   height: 24px;
+  /* width: 110px;*/
    display: flex;
 
    border: none;
@@ -2391,32 +2400,39 @@ display: block;
    border-radius: 4px;
 }
 .button-add {
-  width:45px ;
+  display: block;
+  box-sizing: border-box;
+  width: 40px ;
+  height: 48px;
   background-image: url("../images/svg-compact/modal-icon-plus.svg");
-  background-color: #ffffff;
+  background-color: #f2f2f2;
    background-repeat: no-repeat;
    background-position: center;
    background-size: 16px 14px;
-  /*position: relative;*/
+  position: relative;
+  border: none;
 }
 .button-del {
-  width: 45px;
-  background-image: url("../images/svg-compact/modal-icon-20.svg");
-  background-color: #ffffff;
+   display: block;
+   box-sizing: border-box;
+  width: 40px;
+  height: 48px;
+  background-image: url("../images/svg-compact/modal-icon-plus.svg");
+  background-color: #f2f2f2;
    background-repeat: no-repeat;
    background-position: center;
    background-size: 16px 14px;
- /* position: relative;*/
+  position: relative;
+ border: none;
 }
 .auth-form-button {
    box-sizing: border-box;
    width: 577px;
    height: 60px;
 
-   margin: 13px 0 0 0;
+   margin: 48px 0 0 0;
    padding: 0;
 
-   /*margin-bottom: 16px;*/
 
    font-family: inherit;
    font-weight: 700;
