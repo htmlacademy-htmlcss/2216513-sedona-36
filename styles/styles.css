@@ -21,8 +21,8 @@ html {
 body {
    margin: 0;
    height: 100%;
-   font-family: "PT Sans";
-   /*font-family: "PT Sans", sans-serif;*/
+
+   font-family: "PT Sans", sans-serif;
    font-weight: 400;
    font-size: 18px;
    line-height: 21px;
@@ -65,11 +65,6 @@ body {
    margin-left: 70px;
 }
 
-.page-header-logo {
-   display: block;
-   width: 140px;
-   margin-left: 70px;
-}
 
 .navigation {
    margin: 0 auto;
@@ -177,7 +172,7 @@ body {
 
 
 .header-icon-favourite {
-   color: #000;
+   color: #000000;
 }
 
 .favourite-number {
@@ -770,7 +765,7 @@ body {
    flex-wrap: wrap;
    align-items: flex-start;
    gap: 20px;
-
+   width: 500px;
    list-style-type: none;
 }
 
@@ -1768,6 +1763,7 @@ body {
    list-style-type: none;
 
    display: flex;
+   flex-wrap: wrap;
    gap: 8px;
 }
 
@@ -1881,7 +1877,7 @@ body {
 
    list-style-type: none;
    color: #68a2ca;
-   column-gap: 20px;
+   gap: 20px;
 }
 
 .footer-social-item {
@@ -1963,6 +1959,8 @@ body {
 
    margin: 0;
    padding: 0;
+
+   color: #68a2ca;
 }
 
 .footer-link-htmlacademy:hover {
