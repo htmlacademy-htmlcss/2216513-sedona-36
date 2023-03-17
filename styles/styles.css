@@ -635,7 +635,7 @@ body {
    background-color: #ffffff;
 }
 
-.subscribe-form {
+.subscribe-user {
    width: 684px;
    margin: 0 auto;
    margin-top: 54px;
@@ -651,7 +651,7 @@ body {
    color: #000000;
 }
 
-.field {
+.subscribe-field {
    width: 452px;
 
    margin: 0;
@@ -1843,7 +1843,7 @@ body {
 
 
 
-.subscribe-form-inner {
+.subscribe-user-inner {
    width: 684px;
    margin: 0 auto;
    margin-top: 54px;
@@ -2058,7 +2058,7 @@ body {
    color: #000000;
 }
 
-.auth-form {
+.auth-user {
    width: 577px;
    margin: 0;
    padding: 0;
@@ -2291,7 +2291,7 @@ background-color: #e6e6e6;
    opacity: 1;
 }
 
-.auth-form-button {
+.auth-user-button {
    box-sizing: border-box;
    width: 577px;
    height: 60px;
@@ -2316,9 +2316,9 @@ background-color: #e6e6e6;
    border-radius: 10px;
 }
 
-.auth-form-button:active,
-.auth-form-button:focus,
-.auth-form-button:hover {
+.auth-user-button:active,
+.auth-user-button:focus,
+.auth-user-button:hover {
    background-color: #68a2ca;
 }
 
